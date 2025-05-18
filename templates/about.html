@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="google_element"></div>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+	function loadGoogleTranslate(){
+		new google.translate.TranslateElement("google_element");
+	}
+</script>
+
+<h2>VERSION 1.0.0</h2>
+ 	<hr>
+	<h2>The Project is currently under development</h2>
+	<hr>
+ 	<h2> Creator:</h2>
+ 	<hr>
+ 	<ul class="td">
+		<li>Harsh Bhardwaj</li>
+  	</ul>
+	<hr>
+	<p class="td">Thank you, For visiting website</p>
+{% endblock %}
