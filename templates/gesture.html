@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="split left">
+    <h2 align="center">Webcam Live ISL Gesture Recognition</h2>
+    <br>
+    <div style="text-align: center;">
+        <p style="color: #333;">Make sure your hand is clearly visible in the webcam feed.</p>
+        <div style="border: 4px solid #4CAF50; display: inline-block; border-radius: 10px; overflow: hidden;">
+           <img src="/gesture-feed/" width="640" height="480" alt="Live Camera Stream">
+
+        </div>
+    </div>
+</div>
+
+<div class="split right">
+    <h2 align="center">Gesture Prediction (ISL)</h2>
+    <p style="text-align: center;">Prediction will be shown on the video overlay in real-time (see top-left).</p>
+
+    <div style="text-align:center; margin-top: 40px;">
+        <button class="submit" onclick="location.reload();">Restart Stream</button>
+    </div>
+</div>
+{% endblock %}
