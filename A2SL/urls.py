@@ -31,4 +31,8 @@ urlpatterns = [
     path('animation/', views.animation_view, name='animation'),
     path('manual/',views.manual_view, name='manual'),
     path('', views.home_view, name='home'),
+    path('gesture/', views.gesture_input_view, name='gesture'),
+    path('gesture-feed/', views.gesture_feed_view, name='gesture_feed'),
+
 ]
+
